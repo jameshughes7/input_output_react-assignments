@@ -5,7 +5,8 @@ import UserOutput from './UserOutput/UserOutput';
 
 class App extends Component {
   state = {
-    username: 'BibleMan'
+    username: 'BibleMan',
+    nickNames: ['WizzBanger', 'Slapdash', 'Hopscotch']
   }
 
   // function syntax to be used for event handlers
@@ -22,9 +23,9 @@ class App extends Component {
       <UserInput 
       changed={this.inputChangedHandler}
       currentName={this.state.username}/>
-      <UserOutput userName={this.state.username}/>
-      <UserOutput userName={this.state.username}/>
-      <UserOutput userName={this.state.username}/>
+      <UserOutput userName={this.state.username} nickName ={this.state.username + ' ' + this.state.nickNames[0]}/>
+      <UserOutput userName={this.state.username} nickName ={this.state.username + ' ' + this.state.nickNames[1]}/>
+      <UserOutput userName={this.state.username} nickName ={this.state.username + ' ' + this.state.nickNames[2]}/>
       <UserOutput userName="Gabriel"/>
       </div>
     );

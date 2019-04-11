@@ -6,7 +6,7 @@ const userOutput = (props) => {
         return (
             <div className="UserOutput">
                 <p>Username: {props.userName}</p>
-                <p>This is the 2nd paragraph</p>
+                <p>NickName: {props.nickName} </p>
             </div>
         )
     }
